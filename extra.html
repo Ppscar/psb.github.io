@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Extras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="omasivu.css">
+  </head>
+  <body>
+	<div class="d-flex flex-row bd-highlight mb-3" id="links">
+		<div class="p-2 bd-highlight">
+			<a href="https://soundcloud.com/psbfamilyproduction">
+				<img src="soundcloud.png" style="width:30px" alt="Soundcloud">
+			</a>
+		</div>
+		<div class="p-2 bd-highlight">
+			<a href="https://open.spotify.com/artist/5LcaoIwGfWf2WQFvBMJmdf?si=H7d40MNjTwqMtV3zT35LAw&nd=1">
+				<img src="spotify.png" style="width:30px" alt="Spotify">
+			</a>
+		</div>
+		<div class="p-2 bd-highlight">
+			<a href="https://www.youtube.com/channel/UCHboZOV8nivUVK9Gh1CobEw">
+				<img src="youtube.png" style="width:30px" alt="Youtube">
+			</a>
+		</div>
+	</div>
+ <nav class="navbar navbar-expand-lg navbar-light" style="background-color: red;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html" style="text-shadow: 2px 2px 5px black">PSB</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+    <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" style="text-shadow: 2px 2px 5px black">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Jäsenet.html" style="text-shadow: 2px 2px 5px black">Crew</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Tuotantoa.html" style="text-shadow: 2px 2px 5px black">Production</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="extra.html" style="text-shadow: 2px 2px 5px black">Extras</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+<div class="container-fluid">		
+	<div class="row">
+		<div class="col4">
+		<div class="d-flex justify-content-start">
+			<h1>Extras</h1>
+		</div>
+		</div>
+	</div>
+</div>	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col1">
+			</div>
+		</div>
+<h2 class="center" style="text-shadow: 2px 2px 5px red">Gallery</h2>
+<div class="row">
+  <div class="column">
+    <img src="kuva1.jpg" alt="kuva1" style="width:30%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="kuva2.jpg" alt="kuva2" style="width:30%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="kuva3.jpg" alt="kuva3" style="width:30%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="kuva4.jpg" alt="kuva4" style="width:30%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="kuva5.jpg" alt="kuva5" style="width:30%" onclick="onClick(this)">
+  </div>
+  <div class="column">
+    <img src="kuva6.jpg" alt="kuva6" style="width:30%" onclick="onClick(this)">
+  </div>
+</div>
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <img class="w3-modal-content" id="img01" style="width:50%" src="text.png" alt="Press the image to enlarge it. &#128526;">
+</div>
+
+<script>
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "inline-block";
+}
+</script>
+		<div class="row">
+			<div class="col2">
+			</div>
+		</div>
+	</div>	
+<div class="d-flex flex-row bd-highlight mb-3">
+  <div class="p-2 bd-highlight">
+	<a href="https://www.instagram.com/psb_family_production/">
+		<img src="ig.png" style="width:30px" alt="Instagram">
+	</a>
+  </div>
+  <div class="p-2 bd-highlight">
+	<a href="mailto:psbfamilyproduction@gmail.com">
+	<img src="mail.png" style="width:30px" alt="email">
+	</a>
+  </div>
+</div>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>
